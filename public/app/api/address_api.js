@@ -1,4 +1,4 @@
-var db = require('mongojs').connect('mongodb://<username>:<password>@127.0.0.1:27017/BlockDB',['BlockCollection','TxCollection','OrphanTxCollection']);
+var db = require('mongojs').connect('mongodb://127.0.0.1:27017/BlockDB',['BlockCollection','TxCollection','OrphanTxCollection']);
 var moment = require('moment');
 
 
