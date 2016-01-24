@@ -39,6 +39,11 @@ var server = http.createServer(app).listen(app.get('port'),function() {
     console.log("App listening on port " + app.get('port'));
 });
 
+var router = express.Router(); 				// get an instance of the express Router
+
+router.use(express.static(__dirname + './routes'));
+
+
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
