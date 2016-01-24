@@ -41,3 +41,8 @@ var server = http.createServer(app).listen(app.get('port'),function() {
 app.route('/').get(function (req, res) {
   res.render('./app/jade/layout.jade');
 });
+app.use(function(req, res, next) {
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
