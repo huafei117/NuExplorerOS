@@ -25,7 +25,7 @@ var OplogWatcher = require('mongo-oplog-watcher');
 
 // configuration ===========================================
 // view engine setup
-app.set('views', path.join(__dirname, '../public/app/jade'));
+app.set('views', path.join(__dirname, '/public/app/jade'));
 app.set('view engine', 'jade');
 app.use(logger('dev')); 
 app.use(bodyParser.json());
