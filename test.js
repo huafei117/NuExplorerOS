@@ -5,7 +5,6 @@ var path = require('path');
 // view engine setup
 app.set('views', path.join(__dirname, './public/app/jade'));
 app.set('view engine', 'jade');
-app.use(favicon());
 app.use(logger('dev')); 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
