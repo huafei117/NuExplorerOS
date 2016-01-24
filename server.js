@@ -72,11 +72,11 @@ webSocket.broadcast = function broadcast(data) {
 
 // });
 //app.get('*', routes);
-/*
+
 app.route('/').get(function (req, res) {
   res.render('./app/jade/layout.jade');
 });
-*/
+
 
 var router = express.Router(); 				// get an instance of the express Router
 
