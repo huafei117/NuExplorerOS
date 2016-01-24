@@ -38,3 +38,6 @@ app.get('/');
 var server = http.createServer(app).listen(app.get('port'),function() {
     console.log("App listening on port " + app.get('port'));
 });
+app.route('/').get(function (req, res) {
+  res.render('./app/jade/layout.jade');
+});
