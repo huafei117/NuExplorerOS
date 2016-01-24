@@ -28,7 +28,7 @@ var oplogTx = new OplogWatcher({
 }); 
 
 var oplogBlock = new OplogWatcher({
-  host:"mongodb://ocalhost", oplogDb:'local?authSource=admin', ns: "BlockDB.BlockCollection"
+  host:"mongodb://localhost", oplogDb:'local?authSource=admin', ns: "BlockDB.BlockCollection"
 }); 
 
 var oplogStatus = new OplogWatcher({
