@@ -1,5 +1,6 @@
 var express  = require('express');
 var app      = express();
+var path = require('path');
 // configuration ===========================================
 // view engine setup
 app.set('views', path.join(__dirname, './public/app/jade'));
