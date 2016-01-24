@@ -13,4 +13,4 @@ module.exports = function (req, res) {
   res.status(200).render('/jade/layout');
 };
 
-//module.exports = router;
+module.exports = router;
